@@ -1,6 +1,12 @@
 # Popularité des langages de programmation sur Stack Overflow
+![prog_lang](prog_lang.jpg)
+## À propos
 
-Ce projet étudie l’évolution de la popularité des langages et technologies sur Stack Overflow, avec un intérêt particulier pour le langage **R**. L’analyse est réalisée en R dans le notebook [`notebook.ipynb`](notebook.ipynb).
+Ce projet analyse l’évolution de la popularité des langages de programmation et des technologies sur Stack Overflow. L’objectif principal est d’étudier la place du langage **R** et de la comparer aux tags les plus populaires entre 2008 et 2020.
+
+L’analyse est réalisée en **R** dans un notebook Jupyter. Elle utilise `readr` pour importer les données, `dplyr` pour les transformer et `ggplot2` pour produire les visualisations.
+
+**Topics :** `r` · `rstats` · `data-analysis` · `data-visualization` · `stackoverflow` · `ggplot2` · `dplyr` · `jupyter-notebook` · `google-colab` · `csv` · `data-science`
 
 ## Contenu du projet
 
@@ -10,6 +16,8 @@ Ce projet étudie l’évolution de la popularité des langages et technologies 
 | [`stack_overflow_data.csv`](stack_overflow_data.csv) | Jeu de données utilisé par le notebook : une ligne par tag et par année |
 | [`by_tag_year.csv`](by_tag_year.csv) | Jeu de données alternatif contenant les colonnes `year`, `tag`, `number` et `year_total` ; il n’est pas utilisé directement par le notebook actuel |
 | [`prog_lang.jpg`](prog_lang.jpg) | Image affichée en introduction du notebook |
+
+Le fichier principal du projet est `notebook.ipynb`. Le fichier `analyse.r` est prévu pour une éventuelle version en script R, mais le code exécutable actuel se trouve dans le notebook.
 
 ## Analyse réalisée
 
@@ -21,6 +29,15 @@ Le notebook :
 4. affiche la part de R en 2020 ;
 5. identifie les cinq tags ayant reçu le plus de questions entre 2015 et 2020 ;
 6. compare leur évolution en pourcentage au moyen d’un graphique.
+
+## Résultats attendus
+
+Après exécution du notebook, on obtient :
+
+- un tableau contenant la proportion de questions associées à R en 2020 ;
+- un graphique de l’évolution de la proportion du tag `r` au fil des années ;
+- la liste des cinq tags les plus représentés sur la période 2015–2020 ;
+- un graphique comparant l’évolution de ces cinq tags.
 
 Les colonnes principales de `stack_overflow_data.csv` sont :
 
